@@ -5,21 +5,21 @@
 class Sendex < Formula
   desc "A lightweight API endpoint testing tool."
   homepage ""
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hadlow/sendex/releases/download/v1.2.0/sendex_Darwin_x86_64.tar.gz"
-      sha256 "71d61d4dd627968950222fa4c6d55e11afdae31a42283a6cdcd6448ea441584a"
+      url "https://github.com/hadlow/sendex/releases/download/v1.2.1/sendex_Darwin_x86_64.tar.gz"
+      sha256 "02df5bf58655016736bec0ca66c033bc069a8c2684e7c1a0749c7e7ef7785a01"
 
       def install
         bin.install "sendex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hadlow/sendex/releases/download/v1.2.0/sendex_Darwin_arm64.tar.gz"
-      sha256 "a40c328b8da454c27d35bfa9db33ec01b72653d52a28b38a9a263ff37739a5fd"
+      url "https://github.com/hadlow/sendex/releases/download/v1.2.1/sendex_Darwin_arm64.tar.gz"
+      sha256 "c9384149347aad93a7047e39dee0e1103b7ae79b6a516d09742bfbdc73a2e0f3"
 
       def install
         bin.install "sendex"
@@ -30,8 +30,8 @@ class Sendex < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hadlow/sendex/releases/download/v1.2.0/sendex_Linux_x86_64.tar.gz"
-        sha256 "167ab70bd2b890f46e4d33a71459e158892ea46a68ba73cdcf35582e7baa74cb"
+        url "https://github.com/hadlow/sendex/releases/download/v1.2.1/sendex_Linux_x86_64.tar.gz"
+        sha256 "213932a5c7fa29ac495bf577f5e635776268b03d66193b0006ca920999d1fabb"
 
         def install
           bin.install "sendex"
@@ -40,8 +40,8 @@ class Sendex < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hadlow/sendex/releases/download/v1.2.0/sendex_Linux_arm64.tar.gz"
-        sha256 "ee370d93ff1a5454bbaecf9a16f84533b20d85cf4ee8f2b6199df51726a0a119"
+        url "https://github.com/hadlow/sendex/releases/download/v1.2.1/sendex_Linux_arm64.tar.gz"
+        sha256 "2aa836d404ed721af8bcee7a019ac790be794fb2b2ebbab3f101230f604881ec"
 
         def install
           bin.install "sendex"
